@@ -1,0 +1,119 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.todoApp{
+    width: 50%;
+    min-height: 50%;
+    background-color: #eee;
+    border-radius: 8px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+h1{
+    text-align: center;
+    color:#374151;
+}
+.date{
+    text-align: center;
+    font-size: 15px;
+    color:skyblue;
+
+
+}
+img{
+    width:25px;
+    height:25px;
+}
+.task{
+    width:100%;
+}
+.task-form{
+    display:flex;
+    justify-content: center;
+    width: 100%;
+}
+.task-input, .task-submit{
+    margin:3px;
+    outline: none;
+    border: none;
+    height:30px ;
+    padding:10px;
+    border-radius:10px;
+
+}
+.task-input::placeholder{
+    color:#374151;
+}
+.task-input{
+    flex:1 1 0%;
+}
+.task-submit{
+    background-color: lightblue;
+    color:#374151;
+    text-transform:uppercase;
+    font-size: 12px;
+    
+}
+
+.content{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+    background-color: rgba(173, 216, 230, 0.642);
+    border-radius: 5px;
+    margin:10px 0px;
+}
+
+.task-content{
+    flex: 1 1 0%;
+     
+}
+.task-text{
+    display:block;
+    width: 100%;
+    
+}
+.checked{
+    text-decoration: line-through;
+    color:lightblue;
+}
+
+.action{
+    display: flex;
+    width: 100%;
+
+}
+.task-text,.edit-btn, .delete-btn{
+    margin:3px;
+    outline: none;
+    border: none;
+    height:30px ;
+    padding:10px;
+    border-radius:10px;
+}
+  
+.edit-btn{
+    background-color:lightblue ;
+    font-size: 12px;
+}
+.delete-btn{
+    background-color: pink;
+    font-size: 12px;
+
+    
+
+}
