@@ -4,7 +4,8 @@
     const task_input=document.querySelector(".task-input");
     const newDate=new Date();
     const dateString= newDate.toString().split(" ");
-    const date=document.querySelector(".date").innerHTML=dateString[0] + " " + dateString[1] + " " + dateString[2];
+    const date=document.querySelector(".date").innerHTML=dateString[0] + " " + dateString[1] + " " + dateString[2] + " " + dateString[3] + " " + dateString[4];
+    console.log(dateString);
     task_form.addEventListener('submit', (e)=>{
         e.preventDefault();
         const task=task_input.value;
